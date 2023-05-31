@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\TP_05_Sala_de_Escape.bundle.scp.css",
+      "PackagePath": "staticwebassets\\TP_05_Sala_de_Escape.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\css\\indexSty.css",
+      "PackagePath": "staticwebassets\\css\\indexSty.css"
+    },
+    {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\css\\indexStyle.css",
+      "PackagePath": "staticwebassets\\css\\indexStyle.css"
+    },
+    {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\js\\index.js",
+      "PackagePath": "staticwebassets\\js\\index.js"
+    },
+    {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\js\\indexxed.js",
+      "PackagePath": "staticwebassets\\js\\indexxed.js"
+    },
+    {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.TP_05_Sala_de_Escape.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.TP_05_Sala_de_Escape.props",
+      "PackagePath": "build\\TP_05_Sala_de_Escape.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.TP_05_Sala_de_Escape.props",
+      "PackagePath": "buildMultiTargeting\\TP_05_Sala_de_Escape.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.TP_05_Sala_de_Escape.props",
+      "PackagePath": "buildTransitive\\TP_05_Sala_de_Escape.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
