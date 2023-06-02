@@ -15,7 +15,75 @@ body {
 }
 
 footer {
-  position: fixed; 
-  bottom: 0; 
+  position: fixed;
+  bottom: 0;
   margin: 10px 0px 20px 0px;
 }
+
+.navegador {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  background-color: antiquewhite;
+  border-radius: 20px;
+}
+
+.navegador ul {
+  list-style: none;
+}
+
+.navegador ul li {
+  display: inline-block;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.navegador ul li a {
+  display: block;
+  padding: 10px;
+  color: #1b6ec2;
+  text-decoration: none;
+}
+
+.navegador ul li:hover {
+  background: #62669d;
+  border-radius: 20px;
+}
+
+footer {
+  color: antiquewhite;
+}
+
+.cohete-imagen {
+  margin-top: 15px;
+  margin-left: 5px;
+  width: 45px;
+  float: left;
+}
+
+.navegador {
+  position: relative;
+  display: inline-block;
+}
+
+.navegador ul li:not(:last-child) {
+  margin-right: 10px;
+}
+
+#menu {
+  position: absolute;
+  top: -60px;
+  margin-left: 70px;
+  display: none;
+  list-style: none;
+  white-space: nowrap;
+  background-color: antiquewhite;
+  border-radius: 20px;
+  float: right;
+  clear: right;
+}
+
+

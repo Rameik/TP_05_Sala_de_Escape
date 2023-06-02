@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\TP_05_Sala_de_Escape.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\Thumbs.db",
+      "PackagePath": "staticwebassets\\Thumbs.db"
+    },
+    {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\cohete.ico",
+      "PackagePath": "staticwebassets\\cohete.ico"
+    },
+    {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\cohete.png",
+      "PackagePath": "staticwebassets\\cohete.png"
+    },
+    {
       "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\css\\indexSty.css",
       "PackagePath": "staticwebassets\\css\\indexSty.css"
     },
@@ -17,8 +29,28 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\espacio1.jpg",
+      "PackagePath": "staticwebassets\\espacio1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\espacio2.jpg",
+      "PackagePath": "staticwebassets\\espacio2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\espacio3.jpeg",
+      "PackagePath": "staticwebassets\\espacio3.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\espacio4.jpg",
+      "PackagePath": "staticwebassets\\espacio4.jpg"
+    },
+    {
       "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\imagen-nave.jpg",
+      "PackagePath": "staticwebassets\\imagen-nave.jpg"
     },
     {
       "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\js\\index.js",

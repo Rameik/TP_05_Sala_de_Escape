@@ -12,7 +12,12 @@ public class HomeController : Controller
 
     public IActionResult Tutorial()
     {
-        return View("Tutorial");
+        return View();
+    }
+
+    public IActionResult Creditos()
+    {
+        return View();
     }
 
     public IActionResult Comenzar()

@@ -1,16 +1,29 @@
 ﻿@{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Inicio";
 }
+<link rel="stylesheet" href="/css/indexStyle.css">
 
-<h1>TP XX - Index</h1>
+<body>
+    <h2> Misión espacial </h2>
 
-<link rel="stylesheet" href="/css/indexSty.css">
+    <div class="slider-container">
+        <div class="slider">
+            <ul>
+                <li><img src="espacio1.jpg" alt=""></li>
+                <li><img src="espacio2.jpg" alt=""></li>
+                <li><img src="espacio3.jpeg" alt=""></li>
+                <li><img src="espacio4.jpg" alt=""></li>
+            </ul>
+            <div class="slider-text">
+                <h3 class="slider-titulo">Sinopsis</h3>
+                <p class="slider-parrafo">En un futuro cercano, la humanidad ha logrado enviar una misión espacial tripulada a un planeta lejano en busca de recursos vitales para la supervivencia de la Tierra. Sin embargo, durante la exploración, algo salió mal y la nave espacial quedó varada en el espacio. Los jugadores asumen el papel de la tripulación de la nave, quienes deben trabajar juntos para resolver los desafíos y regresar a salvo a casa.</p>
+            </div>
+        </div>
+    </div>
 
-<a href='@Url.Action("Sala1")'> asad</a>
+    <form action='@Url.Action("Comenzar")' class="boton-comenzar">
+        <input type="submit" value="Comenzar desafio">
+    </form>
+</body>
 
-<button onclick="realizarExperimento()">Realizar experimento</button>
-<p id="resultadoExperimento"></p>
 
-
-
-<script src="/js/indexxed.js"> </script>
