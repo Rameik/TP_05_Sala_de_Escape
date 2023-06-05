@@ -1,12 +1,12 @@
 @{
-    ViewData["Title"] = "Sala 1";
+    ViewData["Title"] = "Sala 4";
 }
 
 <link rel="stylesheet" href="/css/salaStyle.css">
 
 <style>
     .banner{
-        background-image: url(/espacio5.jpg);
+        background-image: url(/espacio8.jpg);
     }
 </style>
 
@@ -18,12 +18,11 @@
     <p class="parrafo">texto trama</p>
     
     <div class="contenedor-respuesta">
-        <form action='@Url.Action("Habitacion", new {sala = 1})' class="boton-validar" method="post">
+        <form action='@Url.Action("Habitacion", new {sala = 4})' class="boton-validar" method="post">
             <input type="text" name="clave">
             <input type="submit" value="Validar">
         </form>
     </div>
-
 
     <div class="contenedor-pistas">
         <button onclick="alert('texto pista 1')"> Pista 1 </button>

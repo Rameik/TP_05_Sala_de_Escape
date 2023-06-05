@@ -5,6 +5,8 @@ namespace TP_05_Sala_de_Escape.Controllers;
 
 public class HomeController : Controller
 {
+    public string[] salas = {"SalaUno", "SalaDos", "SalaTres", "SalaCuatro"};
+
     public IActionResult Index()
     {
         return View();
@@ -22,23 +24,24 @@ public class HomeController : Controller
 
     public IActionResult Comenzar()
     {
-        int estado = Escape.getEstadoJuego();
-        switch(estado){
-            case 1:
-                return View("SalaUno");
-            case 2:
-                return View("SalaDos");
-            case 3:
-                return View("SalaTres");
-            case 4:
-                return View("SalaCuatro");
-        }
-        return View();
+        Escape.estadoJuego = 1;
+        return View(salas[Escape.getEstadoJuego() - 1]);
     }
 
     public IActionResult Habitacion(int sala, string clave)
     {
-        
-        return View();
+        if(sala == Escape.getEstadoJuego()){
+            if(Escape.resolverSala(sala, clave)){
+                if(Escape.getEstadoJuego() == 5) return View("Victoria");
+                else return View(salas[Escape.getEstadoJuego() - 1]);
+            }
+            else{
+                ViewBag.Error = "La respuesta ingresada es incorrecta";
+                return View(salas[sala - 1]);
+            }
+        }
+        else{
+            return View(salas[Escape.estadoJuego - 1]);
+        }
     }
 }

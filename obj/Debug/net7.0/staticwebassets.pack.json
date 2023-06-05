@@ -17,16 +17,24 @@
       "PackagePath": "staticwebassets\\cohete.png"
     },
     {
-      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\css\\indexSty.css",
-      "PackagePath": "staticwebassets\\css\\indexSty.css"
-    },
-    {
       "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\css\\indexStyle.css",
       "PackagePath": "staticwebassets\\css\\indexStyle.css"
     },
     {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\css\\salaStyle.css",
+      "PackagePath": "staticwebassets\\css\\salaStyle.css"
+    },
+    {
       "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\css\\tutorialStyle.css",
+      "PackagePath": "staticwebassets\\css\\tutorialStyle.css"
+    },
+    {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\espacio-gif1.gif",
+      "PackagePath": "staticwebassets\\espacio-gif1.gif"
     },
     {
       "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\espacio1.jpg",
@@ -45,6 +53,22 @@
       "PackagePath": "staticwebassets\\espacio4.jpg"
     },
     {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\espacio5.jpg",
+      "PackagePath": "staticwebassets\\espacio5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\espacio6.jpg",
+      "PackagePath": "staticwebassets\\espacio6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\espacio7.jpg",
+      "PackagePath": "staticwebassets\\espacio7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\espacio8.jpg",
+      "PackagePath": "staticwebassets\\espacio8.jpg"
+    },
+    {
       "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -55,10 +79,6 @@
     {
       "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\js\\index.js",
       "PackagePath": "staticwebassets\\js\\index.js"
-    },
-    {
-      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\js\\indexxed.js",
-      "PackagePath": "staticwebassets\\js\\indexxed.js"
     },
     {
       "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\js\\site.js",

@@ -1,0 +1,50 @@
+@{
+    ViewData["Title"] = "Victoria";
+}
+
+<link rel="stylesheet" href="/css/site.css"/>
+
+<style>
+    body{
+        background-image: url(/imagen-nave.jpg);
+    }
+        
+    p, h1{
+        color: antiquewhite;
+        font-family: 'Montserrat', sans-serif;;
+    }
+
+    h1{
+        font-size: 50px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    p{
+        font-size: 25px;
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .boton-volver{
+        text-align: center;
+    }
+
+    .boton-volver input{
+        padding: 10px;
+        background-color: antiquewhite;
+        color: #1b6ec2;
+        margin-top: 50px;
+        border-radius: 15px;
+        font-size: 15px;
+        border: 0;
+    }
+</style>
+
+<body>
+    <h1>¡Felicidades! Has logrado reparar la nave espacial y regresar a la Tierra sano y salvo!</h1>
+    
+    <form action='@Url.Action("Index")' class="boton-volver" method="post">
+        <input type="submit" value="Toca aca para volver al inicio">
+    </form>
+</body>

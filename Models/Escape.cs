@@ -7,8 +7,8 @@ namespace TP_05_Sala_de_Escape.Models
 {
    public static class Escape
    {
-      static string[] incognitasSalas = new string[3];
-      static int estadoJuego = 1;
+      public static string[] incognitasSalas = new string[4];
+      public static int estadoJuego = 1;
 
       private static void inicializarJuego(){
         incognitasSalas[0] = "Solucion sala 1";
@@ -22,23 +22,20 @@ namespace TP_05_Sala_de_Escape.Models
       }
 
       public static bool resolverSala(int sala, string incognita){
-        if(incognitasSalas.Length == 0){
+        if(incognitasSalas[0] == null){
             inicializarJuego();
-            return false;
+        }
+        if(sala > estadoJuego){
+          return false;
         }
         else{
-            if(sala > estadoJuego){
-                return false;
-            }
-            else{
-                if(incognitasSalas[sala] == incognita){
-                    return true;
-                    estadoJuego++;
-                }
-                else{
-                    return false;
-                }
-            }
+          if(incognitasSalas[sala - 1] == incognita){
+            estadoJuego++;
+            return true;
+          }
+          else{
+            return false;
+          }
         }
       }
    }

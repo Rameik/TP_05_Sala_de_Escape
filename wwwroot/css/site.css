@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
 html {
   font-size: 14px;
   position: relative;
@@ -25,7 +33,7 @@ footer {
   width: 100%;
   margin-top: 10px;
   background-color: antiquewhite;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 .navegador ul {
@@ -35,7 +43,7 @@ footer {
 .navegador ul li {
   display: inline-block;
   text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 18px;
   padding: 5px;
@@ -50,11 +58,12 @@ footer {
 
 .navegador ul li:hover {
   background: #62669d;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 
 footer {
-  color: antiquewhite;
+  color: #C7BBAA;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .cohete-imagen {
@@ -81,9 +90,10 @@ footer {
   list-style: none;
   white-space: nowrap;
   background-color: antiquewhite;
-  border-radius: 20px;
+  border-radius: 15px;
   float: right;
   clear: right;
 }
+
 
 
