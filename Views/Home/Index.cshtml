@@ -4,7 +4,6 @@
 <link rel="stylesheet" href="/css/indexStyle.css">
 
 <body>
-    
     <h2> Misión espacial </h2>
 
     <div class="slider-container">
@@ -22,9 +21,11 @@
         </div>
     </div>
 
-    <form action='@Url.Action("Comenzar")' class="boton-comenzar" method="post">
-        <input type="submit" value="Comenzar desafio">
-    </form>
+    <div class="contenedor">
+        <a href='@Url.Action("Comenzar")' id="startButton" onclick="borrarValores()" method="post" class="btn-5">Comenzar desafio</a>
+    </div>
+
+    <script src="/js/script.js"></script>
 </body>
 
 

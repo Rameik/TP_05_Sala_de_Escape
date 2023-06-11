@@ -3,34 +3,74 @@
 }
 
 <link rel="stylesheet" href="/css/salaStyle.css">
+<link rel="stylesheet" href="/css/timerStyle.css">
 
 <style>
-    .banner{
-        background-image: url(/espacio6.jpg);
+    body{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/fondo2.png);
+    }
+
+    .contenedor{
+        text-align: center;
     }
 </style>
 
 <body>
+    <header class="container-countdown">
+        <div class="countdown">
+            <h1 class="tiempo-texto">Tiempo restante:</h1>
+            <div>
+                <p class="cuadros" id="hours"></p>
+            </div>
+            :
+            <div>
+                <p class="cuadros" id="minutes"></p>
+            </div>
+            :
+            <div>
+                <p class="cuadros" id="seconds"></p>
+            </div>
+        </div>
+    </header>
+
     <div class="banner">
-        <h1 class="titulo">Titulo sala</h1>
+        <h1 class="titulo">El Enigma Cósmico en el Laboratorio</h1>
     </div>
 
-    <p class="parrafo">texto trama</p>
+    <p class="texto parrafo">Bienvenido a El Enigma Cósmico en el Laboratorio. Te encuentras en medio del espacio, en un laboratorio científico crucial para nuestra misión de regresar a la Tierra. Sin embargo, algo ha salido mal. Un incidente misterioso ha dejado el laboratorio en caos, poniendo en peligro nuestro viaje de regreso. Tu objetivo principal es resolver el enigma cósmico y reparar el laboratorio para restablecer la nave y garantizar un viaje seguro a casa.</p>
+
+    <p class="texto">Al explorar el laboratorio, descubrirás un desafío intrigante: un crucigrama científico. Las respuestas correctas a las pistas relacionadas con los experimentos y equipos del laboratorio te revelarán la palabra clave necesaria para desbloquear las soluciones y arreglar cada sección del laboratorio. Tu conocimiento científico será puesto a prueba a medida que te acerques a resolver el enigma cósmico y asegurar nuestro regreso a salvo.</p>
+
+    <p class="texto">La tripulación depende de tu habilidad para resolver el enigma cósmico en el laboratorio. Observa con atención cada detalle, utiliza tu ingenio y aprovecha tus conocimientos para superar el desafío. Cada paso que des hacia la solución nos acerca más al objetivo de regresar a la Tierra. <b>El codigo que deberas ingresar esta conformado por este patron; La primera letra de la primer palabra, la segunda letra de la segunda palabra, la segunda letra de la tercer palabra, la ultima letra de la cuarta palabra, la tercera letra de la quinta palabra, la primera letra de la sexta palabra y la segunda letra de la septima palabra. La palabra formada debera estar en mayusculas.</b> ¡Prepárate para esta emocionante aventura, y trabaja arduamente para reparar el laboratorio y asegurar nuestro viaje de vuelta a casa!</p>
     
+    <div class="contenedor">
+        <iframe style="max-width:100%; border-radius: 15px; margin-bottom: 20px" src="https://wordwall.net/es/embed/3d05ed318d0c44b88f35d642c1a5dea4?themeId=23&templateId=11&fontStackId=12" width="600" height="380" frameborder="0" allowfullscreen></iframe>
+    </div>
+
     <div class="contenedor-respuesta">
-        <form action='@Url.Action("Habitacion", new {sala = 2})' class="boton-validar" method="post">
+        <form method="post" action='@Url.Action("Habitacion")' class="boton-validar">
             <input type="text" name="clave">
+            <input type="hidden" name="sala" value=2>
             <input type="submit" value="Validar">
         </form>
     </div>
 
     <div class="contenedor-pistas">
-        <button onclick="alert('texto pista 1')"> Pista 1 </button>
-        <button onclick="alert('texto pista 2')"> Pista 2 </button>
+        <button onclick="alert('La palabra que se formara se utiliza para referirse a una porción representativa o un fragmento de algo más grande que se utiliza para estudiar, analizar o exhibir')" class="btn"> Pista 1 <span></span> <span></span> </button>
+        <button onclick="alert('En un laboratorio, es común recolectar y procesar esta _____ para obtener información sobre una sustancia o fenómeno en estudio.')" class="btn"> Pista 2 <span></span> <span></span> </button>
     </div>
     
     @if (ViewBag.Error != null)
     {
-        <h1>@ViewBag.Error</h1>
+        <h2 style="margin-bottom: 10px; color: #E8C7AF;">@ViewBag.Error</h2>
     }
+
+   <section class="final-sms"><h2>Se termino el tiempo, queres volver al menu principal?</h2>
+        <form id="FormBorrar" method="post">
+            <a href='@Url.Action("Index")' class="btn-3" type="submit" onclick="borrarValores()">
+                Volver al menu principal
+            </a>
+        </form>
+    </section>
+    <script src="/js/script2.js"></script>
 </body>

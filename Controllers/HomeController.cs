@@ -28,6 +28,8 @@ public class HomeController : Controller
         return View(salas[Escape.getEstadoJuego() - 1]);
     }
 
+    [HttpPost]
+    
     public IActionResult Habitacion(int sala, string clave)
     {
         if(sala == Escape.getEstadoJuego()){
@@ -41,6 +43,9 @@ public class HomeController : Controller
             }
         }
         else{
+            if(salas.Length < Escape.estadoJuego){
+                return View("Victoria");
+            }
             return View(salas[Escape.estadoJuego - 1]);
         }
     }

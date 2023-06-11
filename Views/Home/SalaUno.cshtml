@@ -3,35 +3,77 @@
 }
 
 <link rel="stylesheet" href="/css/salaStyle.css">
+<link rel="stylesheet" href="/css/timerStyle.css">
 
 <style>
-    .banner{
-        background-image: url(/espacio5.jpg);
+
+    body{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(/fondo1.png);
+    }
+
+    .contenedor{
+        text-align: center;
     }
 </style>
 
 <body>
+    <header class="container-countdown">
+        <div class="countdown">
+            <h1 class="tiempo-texto">Tiempo restante:</h1>
+            <div>
+                <p class="cuadros" id="hours"></p>
+            </div>
+            :
+            <div>
+                <p class="cuadros" id="minutes"></p>
+            </div>
+            :
+            <div>
+                <p class="cuadros" id="seconds"></p>
+            </div>
+        </div>
+    </header>
+
     <div class="banner">
-        <h1 class="titulo">Titulo sala</h1>
+        <h1 class="titulo">El Enigma de las Herramientas Perdidas</h1>
     </div>
 
-    <p class="parrafo">texto trama</p>
+    <p class="texto parrafo">¡Bienvenidos a El Enigma de las Herramientas Perdidas! Te encuentras en la sala de control de la nave espacial, pero algo ha salido mal en nuestro viaje de regreso a casa. Las herramientas vitales para reparar la nave han desaparecido misteriosamente, y ahora depende de ti encontrarlas y desentrañar este enigma.</p>
     
+    <p class="texto">En esta sala, encontrarás una sopa de letras llena de letras desordenadas. Tu misión es buscar y encontrar el nombre de una herramienta específica que necesitamos desesperadamente para reparar la nave. Cada letra de la sopa de letras es una pieza del rompecabezas, y solo al encontrar y unir las letras correctas podrás revelar la clave que te permitirá avanzar a la siguiente sala.</p>
+
+    <p class="texto">Presta atención a las pistas y al contexto de la misión. <b>El codigo que deberas ingresar son las iniciales en mayuscula de cada herramienta ordenadadas en orden alfabetico y todas juntas en una misma palabra.</b> ¡No pierdas tiempo y busca con atención!</p>
+
+    
+    <div class="contenedor">
+        <iframe class="sopa-letras" style="max-width:100%; border-radius: 15px; margin-bottom: 20px" src="https://wordwall.net/es/embed/12bb300bee9c4f7baab6085c103bc8a1?themeId=23&templateId=10&fontStackId=12" width="600" height="380" frameborder="0" allowfullscreen></iframe>
+    </div>
+
     <div class="contenedor-respuesta">
-        <form action='@Url.Action("Habitacion", new {sala = 1})' class="boton-validar" method="post">
+        <form method="post" action='@Url.Action("Habitacion")' class="boton-validar">
             <input type="text" name="clave">
+            <input type="hidden" name="sala" value=1>
             <input type="submit" value="Validar">
         </form>
     </div>
 
 
     <div class="contenedor-pistas">
-        <button onclick="alert('texto pista 1')"> Pista 1 </button>
-        <button onclick="alert('texto pista 2')"> Pista 2 </button>
+        <button onclick="alert('Una de las herramientas a encontrar se usa para aflojar y ajustar tornillos')" class="btn"> Pista 1 <span></span> <span></span> </button>
+        <button onclick="alert('Son 6 herramientas a encontrar')" class="btn"> Pista 2  <span></span> <span></span> </button>
     </div>
     
     @if (ViewBag.Error != null)
     {
-        <h1>@ViewBag.Error</h1>
+        <h2 style="margin-bottom: 10px; color: #E8C7AF;">@ViewBag.Error</h2>
     }
+
+    <section class="final-sms"><h2>Se termino el tiempo, queres volver al menu principal?</h2>
+        <form id="FormBorrar" method="post">
+            <a href='@Url.Action("Index")' class="btn-3" type="submit" onclick="borrarValores()">
+                Volver al menu principal
+            </a>
+        </form>
+    </section>
+    <script src="/js/script2.js"></script>
 </body>

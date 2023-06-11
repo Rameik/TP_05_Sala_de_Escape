@@ -97,16 +97,3 @@ h2 {
 	75% {margin-left: -300%;}
 	100% {margin-left: -300%;}
 }
-
-.boton-comenzar{
-    text-align: center;
-}
-
-.boton-comenzar input{
-    padding: 10px;
-    background-color: antiquewhite;
-    color: #1b6ec2;
-    border-radius: 15px;
-    font-size: 15px;
-    border: 0;
-}

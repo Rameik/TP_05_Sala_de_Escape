@@ -3,34 +3,130 @@
 }
 
 <link rel="stylesheet" href="/css/salaStyle.css">
+<link rel="stylesheet" href="/css/timerStyle.css">
 
 <style>
-    .banner{
-        background-image: url(/espacio7.jpg);
+    body{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(/fondo3.png);
     }
+    *{ 
+        padding: 0; 
+        margin: 0; 
+    }
+        
+    canvas { 
+        background:antiquewhite; 
+        display: block; 
+        margin: 0 auto; 
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+
+    .canvas-container {
+        position: relative;
+    }
+
+    canvas {
+        border: 2px solid #121735;
+    }
+
+    #playButton {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    #overlay {
+        position: absolute;
+        top: 1px;
+        left: 670px;
+        width: 480px;
+        height: 321px;
+        border-radius: 13px;
+        background-color: rgba(0, 0, 0, 0.5);
+        pointer-events: none;
+        transition: background-color 0.5s ease-in-out;
+    }
+
+    #playButton.visible {
+        opacity: 1;
+    }
+
+    #overlay.visible {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .boton-play{
+        width: 90px;
+    }
+
 </style>
 
 <body>
+    <header class="container-countdown">
+        <div class="countdown">
+            <h1 class="tiempo-texto">Tiempo restante:</h1>
+            <div>
+                <p class="cuadros" id="hours"></p>
+            </div>
+            :
+            <div>
+                <p class="cuadros" id="minutes"></p>
+            </div>
+            :
+            <div>
+                <p class="cuadros" id="seconds"></p>
+            </div>
+        </div>
+    </header>
+
     <div class="banner">
-        <h1 class="titulo">Titulo sala</h1>
+        <h1 class="titulo">El Reactor de Energía</h1>
     </div>
 
-    <p class="parrafo">texto trama</p>
+    <p class="texto parrafo">Bienvenido a la Sala del Reactor de Energía. Has progresado exitosamente en tu misión de reparar la nave y regresar a la Tierra. Sin embargo, todavía hay desafios por superar. En esta sala, te encontrarás frente al Reactor de Energía principal de la nave, el corazón que impulsa nuestro viaje de regreso a casa. Desafortunadamente, el reactor ha experimentado una falla crítica y debes resolver este problema para asegurar nuestro viaje seguro de regreso.</p>
+
+    <p class="texto">La temperatura del reactor está aumentando rápidamente, y si no se resuelve el problema a tiempo, podríamos estar en peligro de una explosión catastrófica.</p>
+
+    <p class="texto">Recuerda, cada acción que tomes debe ser precisa y cuidadosa. El destino de toda la tripulación y el éxito de nuestra misión están en tus manos. <b>Deberas completar este minijuego para poder obtener el codigo para reparar el reactor</b>. ¡Demuestra tu valía y asegura nuestro regreso a salvo a la Tierra!</p>
     
+    <div class="canvas-container">
+        <canvas id="myCanvas" width="480" height="320"></canvas>
+        <div id="overlay"></div>
+        <button id="playButton"><img class="boton-play" src="/boton-play.png" alt=""></button>
+    </div>
+
     <div class="contenedor-respuesta">
-        <form action='@Url.Action("Habitacion", new {sala = 3})' class="boton-validar" method="post">
+        <form method="post" action='@Url.Action("Habitacion")' class="boton-validar">
             <input type="text" name="clave">
+            <input type="hidden" name="sala" value=3>
             <input type="submit" value="Validar">
         </form>
     </div>
 
     <div class="contenedor-pistas">
-        <button onclick="alert('texto pista 1')"> Pista 1 </button>
-        <button onclick="alert('texto pista 2')"> Pista 2 </button>
+        <button onclick="alert('El codigo a ingresar lo obtendras al completar el minijuego')" class="btn"> Pista 1 <span></span> <span></span> </button>
+        <button onclick="alert('Suerte!')" class="btn"> Pista 2 <span></span> <span></span> </button>
     </div>
     
     @if (ViewBag.Error != null)
     {
-        <h1>@ViewBag.Error</h1>
+        <h2 style="margin-bottom: 10px; color: #E8C7AF;">@ViewBag.Error</h2>
     }
+
+    <section class="final-sms"><h2>Se termino el tiempo, queres volver al menu principal?</h2>
+        <form id="FormBorrar" method="post">
+            <a href='@Url.Action("Index")' class="btn-3" type="submit" onclick="borrarValores()">
+                Volver al menu principal
+            </a>
+        </form>
+    </section>
+    <script src="/js/salaTres.js"></script>
+    <script src="/js/script2.js"></script>
 </body>

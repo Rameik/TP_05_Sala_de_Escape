@@ -7,30 +7,80 @@ body{
     text-align: center;
 }
 
-.contenedor-pistas button{
+.btn{
     padding: 10px 15px 10px 15px;
-    background-color: antiquewhite;
-    color: #1b6ec2;
-    border-radius: 15px;
-    font-size: 15px;
+    position: relative;
+    font-size: 17px;
     border: 0;
     font-family: 'Montserrat', sans-serif;
-    margin: 2px
+    margin: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: 3px solid;
+    color: #121735;
+    background-color: antiquewhite;
+    border-radius: 15px;
+    z-index: 2;
+}
+
+.btn:hover{
+    background-color: #feecd3;
+    box-shadow: 0 0 20px #292E49;
+    border-color: #292E49;
+}
+
+.btn span:nth-child(n){
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 3px solid;
+    transition: all 0.6s ease;
+}
+
+.btn span:nth-child(1){
+    right: 10%;
+    top: -10px;
+    background-color: antiquewhite;
+}
+
+.btn span:nth-child(2){
+    left: 10%;
+    bottom: -10px;
+}
+
+.btn:hover span:nth-child(1){
+    right: 80%;
+    transform: rotate(90deg);
+    color: #292E49;
+    background-color: #292E49;
+    
+}
+
+.btn:hover span:nth-child(2){
+    left: 80%;
+    transform: rotate(90deg);
+    color: #292E49;
 }
 
 h1{
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
     color: antiquewhite;
 }
 
-p{
+h2{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.texto{
     font-size: 18px;
     text-align: justify;
     margin-left: 30px;
-    margin-bottom: 50px;
     color: #C7BBAA;
+    margin-bottom: 15px;
 }
 
 .titulo{
@@ -53,10 +103,14 @@ p{
 .contenedor-respuesta input{
     padding: 10px 15px 10px 15px;
     background-color: antiquewhite;
-    color: #1b6ec2;
+    color: #121735;
     border-radius: 15px;
-    font-size: 15px;
+    font-size: 17px;
     border: 0;
     font-family: 'Montserrat', sans-serif;
-    margin: 2px
+    margin: 2px;
+}
+
+.contenedor-respuesta input[type="submit"]{
+    cursor: pointer;
 }

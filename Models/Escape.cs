@@ -11,10 +11,10 @@ namespace TP_05_Sala_de_Escape.Models
       public static int estadoJuego = 1;
 
       private static void inicializarJuego(){
-        incognitasSalas[0] = "Solucion sala 1";
-        incognitasSalas[1] = "Solucion sala 2";
-        incognitasSalas[2] = "Solucion sala 3";
-        incognitasSalas[3] = "Solucion sala 4";
+        incognitasSalas[0] = "DLMMST";
+        incognitasSalas[1] = "MUESTRA";
+        incognitasSalas[2] = "0543950";
+        incognitasSalas[3] = "20938420";
       }
 
       public static int getEstadoJuego(){

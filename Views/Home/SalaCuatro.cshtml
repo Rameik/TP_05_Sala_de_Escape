@@ -3,34 +3,125 @@
 }
 
 <link rel="stylesheet" href="/css/salaStyle.css">
+<link rel="stylesheet" href="/css/timerStyle.css">
 
 <style>
-    .banner{
-        background-image: url(/espacio8.jpg);
+    body{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(/fondo4.png);
+    }
+
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:
+        border-box;
+    }
+
+    #puzzle_container{
+        position: relative;
+        width: 300px;
+        height:300px;
+        border-radius:15px;
+        background-color:antiquewhite;
+        box-shadow: 1px 9px 23px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 1px 9px 23px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 1px 9px 23px 0px rgba(0,0,0,0.75);
+    }
+
+    .puzzle_block{
+        position:absolute;
+        left:0;
+        top:0;
+        width:33.4%;
+        height:33.4%;
+        background-color:#121735;
+        color:antiquewhite;
+        font-size:60px;
+        font-weight:bold;
+        text-align:center;
+        padding-top:3%;
+        cursor: pointer;
+        user-select:none;
+        transition:left 0.3s,top 0.3s;
+        border-radius: 15px;
+    }
+
+    .container{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        margin-top: 30px;
     }
 </style>
 
 <body>
+    <header class="container-countdown">
+        <div class="countdown">
+            <h1 class="tiempo-texto">Tiempo restante:</h1>
+            <div>
+                <p class="cuadros" id="hours"></p>
+            </div>
+            :
+            <div>
+                <p class="cuadros" id="minutes"></p>
+            </div>
+            :
+            <div>
+                <p class="cuadros" id="seconds"></p>
+            </div>
+        </div>
+    </header>
+
     <div class="banner">
-        <h1 class="titulo">Titulo sala</h1>
+        <h1 class="titulo">El Último Desafío Estelar</h1>
     </div>
 
-    <p class="parrafo">texto trama</p>
+    <p class="texto parrafo">Bienvenido a El Último Desafío Estelar. En esta ultima sala, se han desordenado los numeros para ingresar el codigo para poder desbloquear la sala que posee la ultima pieza que necesitas para poder reparar la nave y volver a la Tierra.</p>
+
+    <p class="texto">Debes manipular las piezas de manera estratégica para lograr la imagen deseada. Recuerda, cada movimiento cuenta, y la solución está a solo unos movimientos de distancia. Pon a prueba tu ingenio y resuelve este desafío cósmico. Nuestra salvación depende de tu habilidad para completar este rompecabezas y superar este obstáculo en nuestro camino de vuelta a casa</p>
+
+    <p class="texto"><b>Para ello, deberas resolver el slide puzzle para que luego, se te conceda el codigo que habra que ingresar para poder desbloquear la sala.</b> ¡Adelante, tripulante, y que las piezas se alineen en tu favor!</p>
     
+    <div class="container">
+        <div id="puzzle_container">
+            <div class="puzzle_block">1</div>
+            <div class="puzzle_block">2</div>
+            <div class="puzzle_block">3</div>
+            <div class="puzzle_block">4</div>
+            <div class="puzzle_block">5</div>
+            <div class="puzzle_block">6</div>
+            <div class="puzzle_block">7</div>
+            <div class="puzzle_block">8</div>
+        </div>
+    </div>
+    
+
     <div class="contenedor-respuesta">
-        <form action='@Url.Action("Habitacion", new {sala = 4})' class="boton-validar" method="post">
+        <form method="post" action='@Url.Action("Habitacion")' class="boton-validar">
             <input type="text" name="clave">
+            <input type="hidden" name="sala" value=4>
             <input type="submit" value="Validar">
         </form>
     </div>
 
     <div class="contenedor-pistas">
-        <button onclick="alert('texto pista 1')"> Pista 1 </button>
-        <button onclick="alert('texto pista 2')"> Pista 2 </button>
+        <button onclick="alert('El codigo a ingresar lo obtendras al completar el minijuego')" class="btn"> Pista 1 <span></span> <span></span> </button>
+        <button onclick="alert('Suerte!')" class="btn"> Pista 2 <span></span> <span></span> </button>
     </div>
     
     @if (ViewBag.Error != null)
     {
-        <h1>@ViewBag.Error</h1>
+        <h2 style="margin-bottom: 10px; color: #E8C7AF;">@ViewBag.Error</h2>
     }
+
+    <section class="final-sms"><h2>Se termino el tiempo, queres volver al menu principal?</h2>
+        <form id="FormBorrar" method="post">
+            <a href='@Url.Action("Index")' class="btn-3" type="submit" onclick="borrarValores()">
+                Volver al menu principal
+            </a>
+        </form>
+    </section>
+
+    <script src="/js/salaCuatro.js"></script>
+    <script src="/js/script2.js"></script>
 </body>
