@@ -43,7 +43,7 @@ public class HomeController : Controller
             }
         }
         else{
-            if(salas.Length < Escape.estadoJuego){
+            if(salas.Length < Escape.getEstadoJuego()){
                 return View("Victoria");
             }
             return View(salas[Escape.estadoJuego - 1]);
