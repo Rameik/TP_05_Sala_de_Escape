@@ -11,7 +11,7 @@
         
     p, h1{
         color: antiquewhite;
-        font-family: 'Montserrat', sans-serif;;
+        font-family: 'Montserrat', sans-serif;
     }
 
     h1{
@@ -29,12 +29,69 @@
     .btn-5{
         margin-top: 50px;
     }
+
+    .contenedor-puntaje{
+        text-align: center;
+        font-size: 25px;
+        color: #C7BBAA;
+        font-family: 'Montserrat', sans-serif;
+        margin-top: 50px;
+    }
 </style>
 
 <body>
     <h1>¡Felicidades! Has logrado reparar la nave espacial y regresar a la Tierra sano y salvo!</h1>
 
+    <div class="contenedor-puntaje">
+        <span id="contadorDisplay">Tu puntaje es: </span>
+    </div>
+
     <div class="contenedor">
         <a href='@Url.Action("Index")' method="post" class="btn-5">Toca aca para volver al inicio</a>
     </div>
+
+    
+    
+
+    <script src="/js/confetti.js"></script>
+    <script>
+        const start = () => {
+            setTimeout(function(){
+                confetti.start();
+            }, 100);
+        };
+        
+        start();
+    </script>
+
+    <script>
+        let valor = localStorage.getItem('countdownDate');
+
+        let puntaje = localStorage.getItem('puntaje');
+
+        puntaje = parseInt(puntaje, 10);
+        valor = new Date(parseInt(valor, 10));
+
+        let now = new Date().getTime();
+
+        let distance = valor - now;
+
+        let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+        if(minutes > 50){
+            puntaje += 50;
+        }
+
+        if(minutes > 30 && minutes < 50){
+            puntaje += 30;
+        }
+
+        if(minutes > 10 &&  minutes < 30){
+            puntaje += 10;
+        }
+
+        puntaje += @ViewBag.puntaje;
+        contadorDisplay.innerHTML = 'Puntaje: ' + puntaje;
+
+    </script>
 </body>

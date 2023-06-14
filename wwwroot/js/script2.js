@@ -25,7 +25,7 @@ function addHoursToDate(objDate, intHours) {
     valor = localStorage.getItem('countdownDate');
     if (valor) {
       // Si hay un tiempo de inicio guardado, utilizarlo para continuar la cuenta regresiva
-      valor = new Date(parseInt(valor, 10)); // Sumar una hora al tiempo de inicio guardado
+      valor = new Date(parseInt(valor, 10));
     } else {
       // Si no hay un tiempo de inicio guardado, establecer el tiempo de inicio actual y guardarlo en el almacenamiento local
       valor = addHoursToDate(new Date(), 1);

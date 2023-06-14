@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TE4LjkKFAVivICkYKTdUkYUjRGSKpcJBl8gRG2z5Wyg=",
+  "Hash": "Nm6rzPPtBna5dgBD2LKQaSjS3Uxwefk2rOfbhtdRFTE=",
   "Source": "TP_05_Sala_de_Escape",
   "BasePath": "_content/TP_05_Sala_de_Escape",
   "Mode": "Default",
@@ -440,6 +440,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\imagen-nave.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\js\\confetti.js",
+      "SourceId": "TP_05_Sala_de_Escape",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\",
+      "BasePath": "_content/TP_05_Sala_de_Escape",
+      "RelativePath": "js/confetti.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\confetti.js"
     },
     {
       "Identity": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\js\\salaCuatro.js",

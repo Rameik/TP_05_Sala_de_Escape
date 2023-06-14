@@ -14,6 +14,15 @@
     .contenedor{
         text-align: center;
     }
+
+    .puntuacion {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin-right: 20px;
+        font-size: 20px;
+        color: antiquewhite;
+    }
 </style>
 
 <body>
@@ -51,7 +60,7 @@
 
     <div class="contenedor-respuesta">
         <form method="post" action='@Url.Action("Habitacion")' class="boton-validar">
-            <input type="text" name="clave">
+            <input type="text" name="clave" autocomplete="off">
             <input type="hidden" name="sala" value=1>
             <input type="submit" value="Validar">
         </form>
@@ -59,8 +68,8 @@
 
 
     <div class="contenedor-pistas">
-        <button onclick="alert('Una de las herramientas a encontrar se usa para aflojar y ajustar tornillos')" class="btn"> Pista 1 <span></span> <span></span> </button>
-        <button onclick="alert('Son 6 herramientas a encontrar')" class="btn"> Pista 2  <span></span> <span></span> </button>
+        <button onclick="contadorClics('Una de las herramientas a encontrar se usa para aflojar y ajustar tornillos')" class="btn"> Pista 1 <span></span> <span></span> </button>
+        <button onclick="contadorClics('Son 6 herramientas a encontrar')" class="btn"> Pista 2  <span></span> <span></span> </button>
     </div>
     
     @if (ViewBag.Error != null)
@@ -75,5 +84,28 @@
             </a>
         </form>
     </section>
+
+    <footer class="puntuacion">
+        <span id="contadorDisplay">Puntaje: 10</span>
+        <p> Puntaje: @ViewBag.puntaje</p>
+    </footer>
+
+    <script>
+        let contador = localStorage.getItem('puntaje');
+        contador = parseInt(valor, 10);
+        contador += 10;
+        var contadorDisplay = document.getElementById('contadorDisplay');
+        contadorDisplay.innerHTML = 'Puntaje: ' + contador;
+
+        function contadorClics(alerta) {
+            contador-= 2;
+            alert(alerta);
+
+            var contadorDisplay = document.getElementById('contadorDisplay');
+            contadorDisplay.innerHTML = 'Puntaje: ' + contador;
+            localStorage.setItem('puntaje', contador);
+        }
+    </script>
+
     <script src="/js/script2.js"></script>
 </body>

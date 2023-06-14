@@ -13,6 +13,12 @@
     .contenedor{
         text-align: center;
     }
+
+    .puntuacion{
+        float: right; 
+        position: fixed; 
+        bottom: 100px;
+    }
 </style>
 
 <body>
@@ -49,15 +55,15 @@
 
     <div class="contenedor-respuesta">
         <form method="post" action='@Url.Action("Habitacion")' class="boton-validar">
-            <input type="text" name="clave">
+            <input type="text" name="clave" autocomplete="off">
             <input type="hidden" name="sala" value=2>
             <input type="submit" value="Validar">
         </form>
     </div>
 
     <div class="contenedor-pistas">
-        <button onclick="alert('La palabra que se formara se utiliza para referirse a una porción representativa o un fragmento de algo más grande que se utiliza para estudiar, analizar o exhibir')" class="btn"> Pista 1 <span></span> <span></span> </button>
-        <button onclick="alert('En un laboratorio, es común recolectar y procesar esta _____ para obtener información sobre una sustancia o fenómeno en estudio.')" class="btn"> Pista 2 <span></span> <span></span> </button>
+        <button onclick="contadorClics('La palabra que se formara se utiliza para referirse a una porción representativa o un fragmento de algo más grande que se utiliza para estudiar, analizar o exhibir')" class="btn"> Pista 1 <span></span> <span></span> </button>
+        <button onclick="contadorClics('En un laboratorio, es común recolectar y procesar esta _____ para obtener información sobre una sustancia o fenómeno en estudio.')" class="btn"> Pista 2 <span></span> <span></span> </button>
     </div>
     
     @if (ViewBag.Error != null)
@@ -72,5 +78,31 @@
             </a>
         </form>
     </section>
+
+
+    <footer class="puntuacion">
+        <span id="contadorDisplay">Puntaje: 10</span>
+        <p>@ViewBag.puntaje</p>
+    </footer>
+
+    
+    
+    <script>
+        let contador = localStorage.getItem('puntaje');
+        contador = parseInt(valor, 10);
+        contador += 10;
+        var contadorDisplay = document.getElementById('contadorDisplay');
+        contadorDisplay.innerHTML = 'Puntaje: ' + contador;
+
+        function contadorClics(alerta) {
+            contador-= 2;
+            alert(alerta);
+
+            var contadorDisplay = document.getElementById('contadorDisplay');
+            contadorDisplay.innerHTML = 'Puntaje: ' + contador;
+            localStorage.setItem('puntaje', contador);
+        }
+    </script>
+
     <script src="/js/script2.js"></script>
 </body>

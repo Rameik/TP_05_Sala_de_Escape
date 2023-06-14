@@ -22,8 +22,14 @@
     </div>
 
     <div class="contenedor">
-        <a href='@Url.Action("Comenzar")' id="startButton" onclick="borrarValores()" method="post" class="btn-5">Comenzar desafio</a>
+        <a href='@Url.Action("Comenzar")' id="startButton" onclick="borrarValores(), restablecerPuntaje()" method="post" class="btn-5">Comenzar desafio</a>
     </div>
+
+    <script>
+        function restablecerPuntaje(){
+            localStorage.puntaje = 10;
+        }
+    </script>
 
     <script src="/js/script.js"></script>
 </body>

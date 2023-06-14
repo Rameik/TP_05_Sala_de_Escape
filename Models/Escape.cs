@@ -10,6 +10,8 @@ namespace TP_05_Sala_de_Escape.Models
       public static string[] incognitasSalas = new string[4];
       public static int estadoJuego = 1;
 
+      public static int puntaje = 0;
+
       private static void inicializarJuego(){
         incognitasSalas[0] = "DLMMST";
         incognitasSalas[1] = "MUESTRA";
@@ -31,9 +33,11 @@ namespace TP_05_Sala_de_Escape.Models
         else{
           if(incognitasSalas[sala - 1] == incognita){
             estadoJuego++;
+            puntaje += 10;
             return true;
           }
           else{
+            puntaje -= 5;
             return false;
           }
         }

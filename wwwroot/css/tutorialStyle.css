@@ -20,6 +20,15 @@ p{
     color: #C7BBAA;
 }
 
+.puntos{
+    font-size: 22px;
+    text-align: justify;
+    margin-left: 30px;
+    color: #C7BBAA;
+	margin-top: 2px;
+}
+
+
 .texto1{
     margin-top: 60px;
 }

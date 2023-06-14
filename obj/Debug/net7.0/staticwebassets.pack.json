@@ -101,6 +101,10 @@
       "PackagePath": "staticwebassets\\imagen-nave.jpg"
     },
     {
+      "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\js\\confetti.js",
+      "PackagePath": "staticwebassets\\js\\confetti.js"
+    },
+    {
       "Id": "C:\\Users\\ramak\\OneDrive\\Documentos\\Ramiro\\Escuela\\4to Año\\Programacion\\TP_05_Sala_de_Escape\\wwwroot\\js\\salaCuatro.js",
       "PackagePath": "staticwebassets\\js\\salaCuatro.js"
     },
