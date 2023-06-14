@@ -38,16 +38,19 @@ public class HomeController : Controller
             if(Escape.resolverSala(sala, clave)){
                 if(Escape.getEstadoJuego() == 5) {
                     ViewBag.puntaje = Escape.puntaje;
+                    Escape.puntaje = 0;
                     return View("Victoria");
                 }
                 else{
                     ViewBag.puntaje = Escape.puntaje;
+                    Escape.puntaje = 0;
                     return View(salas[Escape.getEstadoJuego() - 1]);
                 }
             }
             else{
                 ViewBag.Error = "La respuesta ingresada es incorrecta";
                 ViewBag.puntaje = Escape.puntaje;
+                Escape.puntaje = 0;
                 return View(salas[sala - 1]);
             }
         }
@@ -56,6 +59,7 @@ public class HomeController : Controller
                 return View("Victoria");
             }
             ViewBag.puntaje = Escape.puntaje;
+            Escape.puntaje = 0;
             return View(salas[Escape.estadoJuego - 1]);
         }
     }

@@ -73,10 +73,13 @@
         width: 90px;
     }
 
-    .puntuacion{
-        float: right; 
-        position: fixed; 
-        bottom: 100px;
+    .puntuacion {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin-right: 20px;
+        font-size: 20px;
+        color: antiquewhite;
     }
 </style>
 
@@ -142,13 +145,12 @@
 
     <footer class="puntuacion">
         <span id="contadorDisplay">Puntaje: 10</span>
-        <p>@ViewBag.puntaje</p>
     </footer>
     
     <script>
         let contador = localStorage.getItem('puntaje');
-        contador = parseInt(valor, 10);
-        contador += 10;
+        contador = parseInt(contador, 10);
+        contador += @ViewBag.puntaje;
         var contadorDisplay = document.getElementById('contadorDisplay');
         contadorDisplay.innerHTML = 'Puntaje: ' + contador;
 

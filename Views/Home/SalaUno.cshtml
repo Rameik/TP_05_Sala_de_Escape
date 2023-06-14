@@ -87,13 +87,13 @@
 
     <footer class="puntuacion">
         <span id="contadorDisplay">Puntaje: 10</span>
-        <p> Puntaje: @ViewBag.puntaje</p>
     </footer>
 
     <script>
         let contador = localStorage.getItem('puntaje');
-        contador = parseInt(valor, 10);
-        contador += 10;
+        contador = parseInt(contador, 10);
+        contador += @ViewBag.puntaje;
+        localStorage.setItem('puntaje', contador);
         var contadorDisplay = document.getElementById('contadorDisplay');
         contadorDisplay.innerHTML = 'Puntaje: ' + contador;
 

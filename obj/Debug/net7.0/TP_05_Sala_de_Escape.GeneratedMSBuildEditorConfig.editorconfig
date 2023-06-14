@@ -9,61 +9,61 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TP_05_Sala_de_Escape
 build_property.RootNamespace = TP_05_Sala_de_Escape
-build_property.ProjectDir = C:\Users\ramak\OneDrive\Documentos\Ramiro\Escuela\4to Año\Programacion\TP_05_Sala_de_Escape\
+build_property.ProjectDir = c:\Users\ramak\OneDrive\Documentos\Ramiro\Escuela\4to Año\Programacion\TP_05_Sala_de_Escape\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\ramak\OneDrive\Documentos\Ramiro\Escuela\4to Año\Programacion\TP_05_Sala_de_Escape
+build_property.MSBuildProjectDirectory = c:\Users\ramak\OneDrive\Documentos\Ramiro\Escuela\4to Año\Programacion\TP_05_Sala_de_Escape
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Home/Creditos.cshtml]
+[c:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Home/Creditos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDcmVkaXRvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Home/Index.cshtml]
+[c:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Home/SalaCuatro.cshtml]
+[c:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Home/SalaCuatro.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhQ3VhdHJvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Home/SalaDos.cshtml]
+[c:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Home/SalaDos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhRG9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Home/SalaTres.cshtml]
+[c:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Home/SalaTres.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhVHJlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Home/SalaUno.cshtml]
+[c:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Home/SalaUno.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTYWxhVW5vLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Home/Tutorial.cshtml]
+[c:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Home/Tutorial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUdXRvcmlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Home/Victoria.cshtml]
+[c:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Home/Victoria.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaWN0b3JpYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Shared/Error.cshtml]
+[c:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/_ViewImports.cshtml]
+[c:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/_ViewStart.cshtml]
+[c:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Shared/_Layout.cshtml]
+[c:/Users/ramak/OneDrive/Documentos/Ramiro/Escuela/4to Año/Programacion/TP_05_Sala_de_Escape/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-oizwh8k6kv
